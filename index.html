@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Calculator Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Smart Attendance Calculator</h1>
+    <h3>Subject Name : 
+        <input type = "text" id ="subname"></h3>
+    <h3>Subject Type:
+    <select id="subjecttype">
+        <option value="Theory">Theory</option>
+        <option value="Lab">Lab</option>
+    </select>
+</h3>    
+    <h3>Total Classes : 
+         <input type = "number" id ="totalclass"></h3>
+    <h3>Classes Attended : 
+        <input type = "number" id ="attendclass"></h3>
+    <button id="addsubject">Add Subject</button>
+    <div id="subjectlist"></div>    
+    <button id="calculate">[Calculate]</button>
+    <h3 id ="result">Attendance: --%  </h3>
+    <h3>No. of Classes I will Attend:
+        <input type = "number" id = "attendfuture"></h3>
+        <button id = "predictattend">Predict Attendance</button>
+        <br><br>
+        <h3 id = "attendresult"></h3>
+     <br><br>    
+    <h3>No. of Classes to Skip:
+        <input type = "number" id = "skipfuture"></h3>
+        <button id = "predmiss">Predict Attendance after missing</button>
+        <h3 id = "missresult"></h3>  
+         <br><br>
+    <script src="script.js"></script>
+    
+</body>
+</html>
